@@ -1,0 +1,32 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5 
+            .col-mb-6 
+                p Aliquam scelerisque arcu rutrum rutrum commodo. Maecenas imperdiet tortor id nisl ullamcorper convallis. Quisque id porttitor urna. Nulla a turpis non enim commodo tincidunt sit amet quis mauris. Vestibulum fermentum justo quis urna varius fermentum. In hac habitasse platea dictumst. Vestibulum lacinia libero a suscipit convallis. Ut aliquet laoreet lectus, vel elementum erat sodales nec. Mauris vitae sagittis ligula.
+
+                p Sed vel lobortis turpis. Mauris dictum rhoncus mi, ut tincidunt tortor tempor vel. Morbi cursus eu purus vel fermentum. Proin turpis metus, egestas ut sapien eu, tristique hendrerit quam. Nunc sit amet nulla ut orci bibendum auctor et et augue. Integer iaculis, justo sed posuere lobortis, est dui fringilla lectus, efficitur rutrum orci ex sit amet neque. Cras dignissim efficitur nulla vitae condimentum. 
+            .col-mb-6
+                img(src="/img/inicio_nosotros.jpg", alt="img nosotros", class="img-fluid")
+        include ./layout/bloque_viajes
+
+    .descuento 
+        .container 
+            .row
+                .col-mb-6
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada
+                        p.fecha 20 De Marzo de 2023 - 28 de Marzo de 2023
+                        p.precio U$D 2500
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
